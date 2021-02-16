@@ -3,7 +3,7 @@
 3.Install the extension
 4.Go to the Roblox website and press on the Stylus button
 5.Click Create Style
-6.Now press on the "Import" button on the left side and select the RoboTIX.css file
+6.Now press on the "Import" button and drag and drop the RoboTIX.css file
 7.Now you can give it a name and then press on the "Save" button
 8.Go to the Roblox site and press on the Stylus button again
 9.Select the theme with the name you gave it
