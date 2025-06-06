@@ -1,19 +1,44 @@
- #nav-robux
-  {
-    background-image: url(https://i.ibb.co/N909DGF/Tix-no-hover.png);
-    background-position: 0 !important;
-  }
+// ==UserScript==
+// @name         RoboTIX
+// @namespace    http://tampermonkey.net/
+// @version      1.1
+// @description  Robux to Tix Logo Replacer
+// @author       You
+// @match        *://www.roblox.com/*
+// @grant        GM_addStyle
+// @grant        GM_getResourceURL
+// @resource     tixNoHover https://raw.githubusercontent.com/Turtlemaxx/RoboTIX/refs/heads/main/tix-nohover.png
+// @resource     tixHover   https://raw.githubusercontent.com/Turtlemaxx/RoboTIX/refs/heads/main/tix-hover.png
+// ==/UserScript==
 
-  #nav-robux:hover
-  {
-    background-image: url(https://i.ibb.co/ZHCpr0g/Tix-2018.png); 
-    opacity: 0.75;
-  }
+(function() {
+    'use strict';
 
-.text-robux-lg {
-    color: #CC9E71 !important;
-}
+    const tixNoHoverURL = GM_getResourceURL("tixNoHover");
+    const tixHoverURL = GM_getResourceURL("tixHover");
 
-#nav-robux-amount {
-    color: #CC9E71;
-}
+    GM_addStyle(`
+        #nav-robux.icon-robux-28x28 {
+            background-image: url("${tixNoHoverURL}") !important;
+            background-size: contain !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            width: 28px !important;
+            height: 28px !important;
+            display: inline-block !important;
+        }
+
+        #nav-robux.icon-robux-28x28:hover {
+            background-image: url("${tixHoverURL}") !important;
+            opacity: 0.75 !important;
+        }
+        .text-robux-lg {
+            color: #CC9E71 !important;
+        }
+
+        #nav-robux-amount {
+            color: #CC9E71;
+        }
+    `);
+})();
+
