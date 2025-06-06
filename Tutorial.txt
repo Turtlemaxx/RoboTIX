@@ -1,12 +1,12 @@
 1.First download the RoboTIX.css file
-2.Go into the chrome store and type in the search bar "Stylus"
+2.Go into the chrome store and type "Tampermonkey" into the search bar
 3.Install the extension
-4.Go to the Roblox website and press on the Stylus button
-5.Click Create Style
-6.Now press on the "Import" button and drag and drop the RoboTIX.css file
-7.Press overwrite Style
-8.Now you can give it a name and then press on the "Save" button
-9.Go to the Roblox site and press on the Stylus button again
-10.Select the theme with the name you gave it
+4.Go to the Roblox website and press on the Tampermonkey button
+5.Click Create New Userscript
+6.Drag and Drop the RoboTIX.css file into the empty text box
+7.Press the Install Button
+8.Now press CTRL+S or save the file in the top left corner under File🡪Save
+9.Go to the Roblox site and press on the Tampermonkey button again.
+10.Select the Theme RoboTIX and ur done!
 
 I really hope that the tutorial was clearly enough! :)
